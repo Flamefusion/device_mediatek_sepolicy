@@ -344,9 +344,6 @@ allow aee_aedv proc_sched_debug:file r_file_perms;
 # Purpose: Allow aee_aedv to read /proc/atf_log
 allow aee_aedv proc_atf_log:dir search;
 
-# Purpose: Allow aee_aedv to read /proc/last_kmsg
-allow aee_aedv proc_last_kmsg:file r_file_perms;
-
 # Purpose: Allow aee_aedv to access /sys/devices/virtual/timed_output/vibrator/enable
 allow aee_aedv sysfs_vibrator_setting:dir search;
 allow aee_aedv sysfs_vibrator_setting:file w_file_perms;
