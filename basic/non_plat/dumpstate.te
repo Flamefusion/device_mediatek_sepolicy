@@ -152,10 +152,6 @@ allow dumpstate debugfs:dir r_dir_perms;
 allow dumpstate debugfs_mmc:dir search;
 allow dumpstate mnt_media_rw_file:dir getattr;
 
-# Purpose: fix google dumpstate avc error in xTs
-allow dumpstate sysfs_devices_block:file r_file_perms;
-allow dumpstate proc_last_kmsg:file r_file_perms;
-
 # Purpose: Allow dumpstate to read /sys/kernel/debug/kmemleak
 allow dumpstate debugfs_kmemleak:file r_file_perms;
 
